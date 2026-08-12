@@ -1,0 +1,100 @@
+/* ==========================================================================
+   EvoGames — Design Tokens
+   Palette: bio-luminescent forest greens, amber (amber fossil), deep ocean
+   blue for data/science, coral for danger/extinction.
+   ========================================================================== */
+
+:root {
+  /* ---- Dark theme (default) ---- */
+  --bg-0: #0a120e;          /* deepest background */
+  --bg-1: #0f1a14;          /* base page background */
+  --bg-2: #142219;          /* raised surface */
+  --bg-3: #1a2c1f;          /* card surface */
+  --bg-glass: rgba(24, 41, 30, 0.55);
+  --border-soft: rgba(127, 224, 168, 0.14);
+  --border-strong: rgba(127, 224, 168, 0.32);
+
+  --text-primary: #eef5ee;
+  --text-secondary: #a9bdae;
+  --text-tertiary: #6f8577;
+  --text-inverse: #0a120e;
+
+  --green-glow: #7fe0a8;    /* bioluminescent primary */
+  --green-deep: #2d6a4f;    /* forest depth */
+  --green-soft: #b7f0cd;
+  --amber: #e8b86d;         /* amber fossil accent */
+  --amber-soft: #f3d9a6;
+  --ocean: #5fb8d9;         /* data / science blue */
+  --ocean-soft: #a9def0;
+  --coral: #e8735c;         /* danger / extinction */
+  --coral-soft: #f2a595;
+  --violet-mut: #b18ce8;    /* mutation / genetics accent */
+
+  --grad-life: linear-gradient(135deg, #7fe0a8 0%, #5fb8d9 100%);
+  --grad-amber: linear-gradient(135deg, #f3d9a6 0%, #e8b86d 100%);
+  --grad-danger: linear-gradient(135deg, #f2a595 0%, #e8735c 100%);
+  --grad-hero: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(127,224,168,0.16), transparent 60%);
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.28);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.36);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.45);
+  --shadow-glow: 0 0 32px rgba(127, 224, 168, 0.25);
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 150ms;
+  --dur-med: 320ms;
+  --dur-slow: 600ms;
+
+  --font-display-en: "Fraunces", "Vazirmatn", serif;
+  --font-body-en: "Space Grotesk", "Vazirmatn", sans-serif;
+  --font-fa: "Vazirmatn", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+[data-theme="light"] {
+  --bg-0: #f7f4ec;
+  --bg-1: #faf8f2;
+  --bg-2: #f0ecdf;
+  --bg-3: #e8e3d2;
+  --bg-glass: rgba(250, 248, 242, 0.6);
+  --border-soft: rgba(45, 106, 79, 0.16);
+  --border-strong: rgba(45, 106, 79, 0.34);
+
+  --text-primary: #17241a;
+  --text-secondary: #3d5245;
+  --text-tertiary: #6b7f70;
+  --text-inverse: #f7f4ec;
+
+  --green-glow: #2d8a5f;
+  --green-deep: #1e5c3e;
+  --green-soft: #dff2e6;
+  --amber: #b8823a;
+  --amber-soft: #f0dcb4;
+  --ocean: #2884a8;
+  --ocean-soft: #d3edf5;
+  --coral: #c14f38;
+  --coral-soft: #f5cec4;
+  --violet-mut: #8158b8;
+
+  --grad-hero: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(45,106,79,0.10), transparent 60%);
+
+  --shadow-sm: 0 2px 8px rgba(23,36,26,0.06);
+  --shadow-md: 0 8px 24px rgba(23,36,26,0.08);
+  --shadow-lg: 0 20px 60px rgba(23,36,26,0.12);
+  --shadow-glow: 0 0 32px rgba(45, 138, 95, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
